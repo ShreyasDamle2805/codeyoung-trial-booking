@@ -1,0 +1,708 @@
+Dear Sir/Madam,
+
+
+
+Greetings From Talentise Global!!
+
+
+With reference to the recruitment drive of “Codeyoung”, please find below the details of the Assignment Task (For Full-Stack Development Profile) to be done, along with the shortlisted candidates list as attached from your institute.
+
+
+
+
+
+
+Full stack Engineer Task:
+
+
+
+At Codeyoung, parents have the option to book a “trial class” to experience our product and the quality coaching our mentors provide before signing up.
+
+
+
+This is the flow parents usually go through:
+
+
+
+Parents pick a time slot that’s comfortable for them.
+
+
+2. We assign an available mentor
+
+
+
+3. We email both the mentor and the parent a link that takes them to a live class.
+
+
+
+
+
+
+The task is to build a similar appointment-booking system which has:
+
+
+
+· 10 mentors available for trial classes
+
+
+
+· 20 parents interested in booking a trial class per day
+
+
+
+Build a web app that parents can use to book this trial class. You should use NodeJS or Python for any backend APIs and React for the frontend.
+
+
+
+Feel free to use any other backend or frontend libraries.
+
+
+
+
+
+
+Requirements:
+
+
+
+Mentors and parents may be in different time zones. Usually, parents are in the US or UK, and mentors are in India. Please make sure local times are always displayed and communicated to them.
+
+
+2. Daylight Savings Time is a niggle you have to handle.
+
+
+
+3. Parents and mentors can receive a dummy link. It’s assumed that the link will work and will take them to a demo class.
+
+
+
+4. Mentors have at most 2 demo classes a day.
+
+
+
+5. If no mentors are available, use your judgment to communicate an appropriate error state.
+
+
+
+Submission:
+
+
+
+You are encouraged to use an AI assistant to solve this task.
+
+
+2. Submit the solution as a Github repo link which has a README.md that describes how to run the project.
+
+
+
+3. You should also submit a full transcript (both your prompts and agent responses) of your AI sessions. (/export in Claude code for example).
+
+
+
+4. Submit it as TRANSCRIPT.md in the Github repo.
+
+
+
+5. All the above mentioned should be submitted to the email id: campus.ka@talentiseglobal.com within 28th of September 2026 (Latest by 6:00 PM)
+
+
+
+6. The subject line of the assignment submission task email should be like: Codeyoung Assignment Task - <Candidate Name> - Institute Name (ABBR)
+
+
+
+Evaluation:
+
+
+
+If you have questions about edge cases or more requirements, we expect you to research Codeyoung & similar systems to understand how they solve similar cases.
+
+
+2. A good part of this evaluation is what you do & don’t build.
+
+
+
+3. Your product should be usable. Your design sense, and how much you think from a customer PoV will be evaluated.
+
+
+
+4. Code-level architecture and design patterns you use, and how you guide the AI to write good, maintainable code is another pillar criterion.
+
+
+
+
+
+
+Please Note: Shortlisted candidates are also marked in the mail.
+
+
+
+Institute is requested to inform them and share the assignment task with them (from institutes end) at the earliest.
+
+
+
+
+
+
+Thanks & Regards,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subhadeep Bose (He/His/Him)
+
+
+
+Chief Manager - Academia & Corporate Relations
+
+Gmail : subhadeep@talentiseglobal.com
+
+
+
+📞: +91 91470 99507 | +91 98302 61830
+
+
+
+
+
+Talentise Global Private Limited.
+
+
+
+📍: HMP House, 4, Fairley Place, 6th Floor, Kolkata 700001.
+
+
+
+🌐: www.talentiseglobal.com
+
+
+
+CIN: U74999WB2021PTC247554
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DISCLAIMER: “This e-mail message, including any attachments, is for the sole use of the addressees to whom it has been sent, and may contain information that is non-public, proprietary, privileged, confidential or legally protected. If you are not the intended recipient or have received this message in error, you are not authorized to copy, distribute, or otherwise use this message or its attachments. Please notify the sender immediately by return e-mail and permanently delete this message and attachments, if any.
+
+
+
+
+
+
+
+
+
+From: subhadeep@talentiseglobal.com <subhadeep@talentiseglobal.com>
+
+Sent: 24 September 2026 10:49
+
+To: 'Rashmi Bhandary' <placements@sahyadri.edu.in>
+
+Cc: 'souvik@talentiseglobal.com' <souvik@talentiseglobal.com>
+
+Subject: Talentise Global | Shortlisted List & Schedule of Assignment Submission (FSD Profile) - Codeyoung - 2027 Batch.
+
+
+
+
+
+
+Shortlisted List & Schedule of Assignment Submission (Full-Stack Development Profile) - Codeyoung | 2027 Batch
+
+
+
+B.E./B.Tech (CSE, IT & Allied Streams, ECE), BCA & MBA
+
+
+
+
+
+
+Dear Sir/Madam,
+
+
+
+Greetings From Talentise Global!!
+
+
+With reference to the recruitment drive of “Codeyoung”, please find below the schedule of Assignment Submission along with the shortlisted candidates list as attached from your institute.
+
+
+
+Recruitment/Selection Activity:
+
+
+
+Online Assignment Submission - (Elimination Round)
+
+Submission Timeline: 72 hrs
+
+
+
+
+Please note:
+
+
+
+The shortlisted students (list attached) for the Full-Stack Development role are required to complete the assigned task within 72 hours of receiving the assignment.
+
+
+
+The recruiting organization will share the assignment by Friday, 25.09.2026.
+
+
+
+
+
+
+Institute is requested to inform the candidates at the earliest.
+
+
+
+DISCLAIMER:
+
+
+
+TALENTISE GLOBAL does not commit or guarantee any job to any candidate of the institute while performing its responsibilities within the scope of the work in this initiative.
+
+The Final recruitment will be carried out by the corporate depending on/matching their satisfaction & expectation with the candidate.
+
+TALENTISE GLOBAL (at any stage) in no way will influence/interfere or play any role in the recruitment/selection process of the corporate/employer.
+
+TALENTISE GLOBAL does not commit to any vacancy in any form from any particular company or organization under this initiative.
+
+The selected candidates will not have to pay any fees or amount to any party concerned in this recruitment drive.
+
+If a candidate is offered from this recruitment drive under this initiative (also when the candidates accept the offer), the candidate will not be entitled to appear for any other recruitment process as organized by TALENTISE GLOBAL in terms of PLACEMENT (CAMPUS) SUPPORT INITIATIVE.
+
+TALENTISE GLOBAL will not be responsible for any change made by the recruiting organization in terms of recruitment offer or joining status at a later stage.
+
+All the information in the Recruitment Process Invitation (RPI) letter above is based on the communication & approval of the work agreement between the corporate & TALENTISE GLOBAL. If required, the institute can verify with TALENTISE GLOBAL all supporting documents/communication, before participating in the recruitment drive as mentioned above. In case of any such intention of verification, the institute has to send their representative(s) in-person to TALENTISE GLOBAL’s nearest office to verify the same. As per our policy, we cannot produce or send such documents/communication to the institute over email or post or in any form.
+
+Thanks & Regards,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subhadeep Bose (He/His/Him)
+
+
+
+Chief Manager - Academia & Corporate Relations
+
+Gmail : subhadeep@talentiseglobal.com
+
+
+
+📞: +91 91470 99507 | +91 98302 61830
+
+
+
+
+
+Talentise Global Private Limited.
+
+
+
+📍: HMP House, 4, Fairley Place, 6th Floor, Kolkata 700001.
+
+
+
+🌐: www.talentiseglobal.com
+
+
+
+CIN: U74999WB2021PTC247554
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DISCLAIMER: “This e-mail message, including any attachments, is for the sole use of the addressees to whom it has been sent, and may contain information that is non-public, proprietary, privileged, confidential or legally protected. If you are not the intended recipient or have received this message in error, you are not authorized to copy, distribute, or otherwise use this message or its attachments. Please notify the sender immediately by return e-mail and permanently delete this message and attachments, if any. 
+
+This is an assignment prompt received for the Codeyoung Full-Stack Developer campus recruitment process (2027 batch).
+
+A structured breakdown of the assignment, along with an execution strategy to achieve a strong submission, is outlined below.
+
+Core Assignment Summary
+Objective: Build a Full-Stack Trial Class Appointment Booking Web App for Codeyoung.
+
+Frontend: React (JavaScript/TypeScript).
+
+Backend: Node.js (Express, Nest, etc.) or Python (FastAPI, Django, Flask).
+
+Key Submission Requirements:
+
+GitHub Repository link containing clear setup/run instructions in README.md.
+
+Full AI interaction session transcript exported as TRANSCRIPT.md in the repo root.
+
+Email submission to campus.ka@talentiseglobal.com.
+
+Deadline: September 28, 2026, by 6:00 PM IST.
+
+Email Subject Line: Codeyoung Assignment Task - <Candidate Name> - Institute Name (ABBR)
+
+Key Requirements & Technical Considerations
+Requirement	Implementation Strategy
+Multi-Timezone & DST	Store all backend timestamps in standard UTC format. Use timezone libraries on the frontend (date-fns-tz, dayjs, or Luxon) to automatically convert UTC to local times (e.g., IST for Indian mentors, EST/PST for US parents, GMT/BST for UK parents) while handling Daylight Savings transitions dynamically.
+Mentor Constraints	Enforce a hard backend check limiting each of the 10 mentors to a maximum of 2 demo classes per day.
+Demo Class Link	Generate dynamic placeholder/dummy links (e.g., [https://meet.codeyoung.com/room/](https://meet.codeyoung.com/room/)<unique_booking_id>) for both parent and mentor.
+Capacity Management	Implement booking error handling: when all 10 mentors reach their 2-class daily limit (or no timeslot fits), surface a clear user UI state (e.g., "No available slots for this date. Select another date or join the waitlist").
+Recommended System Architecture
+1. Database Schema Design (Minimal & Effective)
+Mentors: id, name, timezone (default: Asia/Kolkata), max_daily_slots (2).
+
+Parents: id, name, email, timezone (e.g., America/New_York).
+
+Bookings: id, parent_id, mentor_id, utc_start_time, utc_end_time, status, meeting_link.
+
+2. Slot Allocation Logic Flow
+Parent selects their desired local date and time.
+
+Frontend converts selected local time to UTC and sends it to the API endpoint (POST /api/bookings).
+
+Backend checks available mentors who:
+
+Have fewer than 2 booked sessions on that specific calendar day in UTC/local mentor time.
+
+Are not already booked during the requested slot window.
+
+Assign an available mentor, persist the booking, generate a dummy meeting link, and return the booking confirmation payload.
+
+Essential Steps to Complete the Task
+Initialize Project & AI Logging:
+
+Open your choice of AI tool (e.g., Claude Code, Cursor, ChatGPT).
+
+Keep a record or export file of all prompts and responses.
+
+Build Backend & Frontend:
+
+Build clean REST APIs for fetching available slots and booking a trial class.
+
+Implement input validation, timezone conversions, and error responses.
+
+Design a polished, user-friendly UI matching parent-facing product standards.
+
+Write Documentation:
+
+Create README.md with setup steps (npm install, npm start, prerequisites, environment variables).
+
+Save the full AI chat log as TRANSCRIPT.md in the root folder.
+
+Final Verification & Email Submission:
+
+Ensure the repository is publicly accessible (or appropriately shared if required).
+
+Send the email strictly following the subject line format specified.
+
+I have to do this since I have been shortlisted
+
+Congratulations on getting shortlisted! This is a great opportunity to show off both your technical skills and how effectively you can leverage AI as a modern developer.
+
+Here is a structured plan to help you complete and submit this assignment well before the September 28, 6:00 PM deadline.
+
+Step 1: Set Up Project & AI Logging Immediately
+Before writing a single line of code, set up your workspace so you don't lose your AI transcript:
+
+Initialize Git Repo:
+
+Bash
+mkdir codeyoung-trial-booking
+cd codeyoung-trial-booking
+git init
+Track AI Prompts:
+
+If using Claude Code, use /export at the end to generate your transcript.
+
+If using Cursor/ChatGPT/Copilot, copy-paste every prompt and response into a file named TRANSCRIPT.md in the root folder as you work.
+
+Step 2: Tech Stack Recommendation
+Backend: Node.js (Express) or Python (FastAPI). FastAPI/Express with SQLite/PostgreSQL is fast to set up and lightweight.
+
+Frontend: React (Vite + Tailwind CSS / shadcn/ui) for a clean UI.
+
+Timezone Handling: Use dayjs or date-fns-tz on the frontend/backend to handle UTC conversions and Daylight Savings seamlessly.
+
+Step 3: Recommended Architecture & Data Model
+Database Schema (Simple SQLite or In-Memory DB)
+Mentors: id, name, timezone (default: Asia/Kolkata)
+
+Parents: id, name, email, timezone (e.g., America/New_York, Europe/London)
+
+Bookings: id, parent_id, mentor_id, utc_start_time, utc_end_time, meeting_link
+
+Key Business Rules to Implement
+Max 2 classes/day per mentor: When checking availability or booking, verify that mentor_id has < 2 bookings for that date.
+
+Timezone Conversion: Always store times in UTC in the database. When a parent inputs 4:00 PM EST, convert it to UTC, store it, and convert UTC back to the mentor's local time (IST) when displaying their schedule.
+
+Error State: If all 10 mentors already have 2 classes or no mentor is free at the requested time, return a clear, user-friendly UI response (e.g., "All mentors are fully booked for this slot. Please select another time or date.").
+
+Dummy Meeting Links: Auto-generate links like [https://meet.codeyoung.com/demo/](https://meet.codeyoung.com/demo/)<booking_id>.
+
+Step 4: System Implementation Roadmap
+1. Backend APIs
+GET /api/mentors: List mentors & their scheduled slots.
+
+GET /api/slots?date=YYYY-MM-DD&timezone=America/New_York: Available slots for parents in their local timezone.
+
+POST /api/bookings: Book a class (assigns available mentor automatically, checks 2-class/day limit).
+
+2. Frontend UX Features
+Timezone Selector: Let the parent toggle/verify their current timezone.
+
+Interactive Slot Picker: Show available slots dynamically adjusted to their chosen timezone.
+
+Confirmation View: Show booked details with both Parent's Local Time and Mentor's Local Time (IST) side by side along with the dummy class link.
+
+Step 5: Submission Checklist
+Before emailing your submission, check off every requirement:
+
+[ ] Repository is public on GitHub.
+
+[ ] README.md contains clear local setup instructions (e.g., npm install, npm run dev).
+
+[ ] TRANSCRIPT.md is present in the root folder containing your complete AI interactions.
+
+[ ] Timezone/DST conversion works accurately.
+
+[ ] Mentors are strictly capped at 2 sessions per day.
+
+[ ] Edge cases (fully booked slots) present a clean UI error message.
+
+Step 6: Draft Email Submission
+When ready, send the email from your address to campus.ka@talentiseglobal.com:
+
+Subject: Codeyoung Assignment Task - Shreyas Damle - SIT (replace SIT with your institute's abbreviation if different)
+
+Body Template:
+
+Dear Selection Team,
+
+Please find my submission for the Codeyoung Full-Stack Developer assignment task.
+
+GitHub Repository: [Insert your GitHub URL]
+
+Live Demo (Optional if hosted): [Insert Vercel/Render link if hosted]
+
+The repository includes:
+
+Complete source code for both backend and frontend.
+
+README.md with step-by-step instructions to run the application locally.
+
+TRANSCRIPT.md detailing the complete AI collaboration process.
+
+Key features handled:
+
+Dynamic UTC / Local Timezone & DST conversions for parents (US/UK) and mentors (India).
+
+Backend enforcement of max 2 demo classes per mentor per day.
+
+Graceful error states and booking allocation logic.
+
+Best regards,
+
+Shreyas Damle
+
+[Your Contact Number]
+
+but according to the mail, they have even asked for prompt
+
+Yes, absolutely! Requirement #3 under Submission specifically asks for:
+
+"You should also submit a full transcript (both your prompts and agent responses) of your AI sessions. (/export in Claude code for example). Submit it as TRANSCRIPT.md in the Github repo."
+
+This means they want to see how you used AI—your thought process, how you broke down the task, the exact prompts you wrote, and how you guided the AI to refine or fix the code.
+
+Here is how you can record and format your prompts for TRANSCRIPT.md:
+
+How to Collect Your Prompts & Responses
+If using Claude Code (CLI):
+
+Run the /export command inside your CLI session.
+
+It will output your entire conversation history to a markdown file, which you can rename or copy directly to TRANSCRIPT.md.
+
+If using Cursor / Windsurf / Copilot / ChatGPT Web:
+
+Create a file called TRANSCRIPT.md in your project root before starting.
+
+As you build, copy and paste each prompt you write and the key code/explanation the AI responds with into TRANSCRIPT.md.
+
+Expected Structure for TRANSCRIPT.md
+Organize the document chronologically so the reviewers can easily follow your workflow:
+
+Markdown
+# AI Interaction Transcript - Codeyoung Assignment
+
+## Session 1: Project Setup & Database Schema
+**User (Prompt):**
+> I am building a trial class booking app for Codeyoung. 
+> Stack: React + Node.js (Express). 
+> Requirements: 10 mentors, 20 parents/day, max 2 classes per mentor per day. 
+> Help me design a SQLite database schema and project structure.
+
+**AI Response:**
+> Here is a minimal SQLite schema for mentors, parents, and bookings... [AI Response Summary/Code]
+
+---
+
+## Session 2: Timezone & DST Logic
+**User (Prompt):**
+> Mentors are in India (IST) and parents are in US/UK. 
+> How should I store booking timestamps in Node.js to handle Daylight Savings Time cleanly?
+
+**AI Response:**
+> Always store timestamps in UTC (ISO 8601 strings) in the database... [AI Response Summary/Code]
+
+---
+
+## Session 3: Edge Case & Limit Enforcement
+**User (Prompt):**
+> Write an Express endpoint POST /api/bookings that checks if an available mentor has less than 2 bookings for that calendar day before confirming. If all 10 are full, return a 409 Conflict with a clear error message.
+
+**AI Response:**
+> [AI Code Response]
+What Evaluators Look For in Your Prompts
+System Prompting & Architecture Guidance: Did you ask the AI to write clean, modular architecture, or did you just say "build me an app"?
+
+Handling Edge Cases: Did you explicitly prompt the AI to handle timezone edge cases, max class limits, and error states?
+
+Debugging & Refinement: How did you guide the AI when it made a mistake or when code didn't work?
+
+can you give me a master prompt so that I can start working on codex
+
+Here is a comprehensive Master Prompt designed for Cursor, Claude Code, GitHub Copilot Workspace, or ChatGPT/Codex.
+
+Copy and paste this exact prompt into your AI coding agent as your Session 1 / System Prompt to kick off the project with clean architecture, proper data modeling, and robust timezone logic.
+
+Master Prompt to Copy & Paste
+Plaintext
+Act as a Principal Full-Stack Engineer and Software Architect. We are building a "Trial Class Appointment Booking System" for Codeyoung. 
+
+### CONTEXT & BUSINESS GOALS
+Parents in the US/UK book 1-on-1 demo/trial classes with mentors based in India (IST). 
+- Capacity scale: ~10 mentors available, ~20 parent booking requests per day.
+- Mentors can teach a MAXIMUM of 2 trial classes per calendar day.
+- Once booked, both parent and mentor receive a dynamic dummy meeting link (e.g., https://meet.codeyoung.com/demo/<booking_id>).
+
+### CORE REQUIREMENTS
+1. Timezone & DST Handling:
+   - Mentors are primarily in Asia/Kolkata (IST, UTC+5:30).
+   - Parents are in US/UK timezones (e.g., America/New_York, America/Los_Angeles, Europe/London).
+   - All backend timestamps MUST be stored strictly in UTC (ISO 8601).
+   - The system must dynamically convert UTC times to local timezones for UI display and handle Daylight Savings Time (DST) automatically.
+
+2. Booking & Capacity Rules:
+   - When a parent requests a timeslot, automatically assign an available mentor who has < 2 bookings on that mentor's local date.
+   - If no mentor is available for the requested slot, return a clear, structured error state (e.g., HTTP 409 / custom payload) and communicate this cleanly in the UI.
+
+3. Tech Stack Requirements:
+   - Backend: Node.js (Express with JavaScript/TypeScript) or Python (FastAPI).
+   - Frontend: React (Vite + Tailwind CSS).
+   - Database: SQLite or lightweight in-memory storage with seed data (10 pre-configured mentors).
+
+### YOUR FIRST TASK
+Please provide a complete project plan and execution roadmap before writing full code. Include:
+1. Recommended folder structure for backend and frontend.
+2. Complete SQLite / Database schema for `mentors`, `parents`, and `bookings`.
+3. Step-by-step logic for the `POST /api/bookings` endpoint, including the exact SQL query / logic to check mentor daily limits (< 2 classes) and timezone boundary conversions.
+4. The list of npm packages required (e.g., date libraries like `dayjs` or `date-fns-tz`).
+
+Once you present this plan, wait for my approval before generating the code base step-by-step.
+How to execute this with Codex / AI Agent
+Paste the prompt into your AI session.
+
+Review the architecture the AI generates (ensure it handles the UTC conversion and 2-class/day cap correctly).
+
+Save your interaction: If using Cursor, copy the prompt and response into TRANSCRIPT.md. If using Claude Code, remember to run /export when finished.
+
+Proceed step-by-step: Ask the AI to generate the backend code first, verify it works locally, then generate the React frontend.
+
+
+
+

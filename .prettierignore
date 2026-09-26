@@ -1,0 +1,6 @@
+package-lock.json
+TRANSCRIPT.md
+docs/provided-context.txt
+node_modules/
+frontend/dist/
+test-results/
