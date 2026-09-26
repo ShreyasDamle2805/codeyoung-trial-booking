@@ -173,7 +173,7 @@ For hands-on testing, follow [MANUAL_TESTS.md](docs/MANUAL_TESTS.md). The option
 
 ## Transcript and submission
 
-`TRANSCRIPT.md` contains the available user/assistant text and textual tool interactions, with the prior conversation supplied in the attachment. Internal reasoning and system/developer instructions are excluded. Refresh it after further AI work:
+`TRANSCRIPT.md` preserves the available user prompts and user-facing assistant responses, including progress updates and clarification answers. It excludes raw tool logs and IDE-injected metadata, makes workspace links relative, and includes the earlier supplied conversation and review as clearly labelled source attachments. It does not summarize or rewrite the dialogue. Refresh it after further AI work:
 
 ```sh
 node tools/export-transcript.mjs path/to/session.jsonl

@@ -20,6 +20,8 @@ The concurrency test uses four workers with independent connections to the same 
 
 The browser suite covers the full flow, confirmation refresh, a new booking’s fresh request key, failed availability recovery, a 409 capacity conflict, a committed booking whose response is lost, mobile layout, accessibility, and keyboard operation.
 
+The published implementation commit [`c13f371`](https://github.com/ShreyasDamle2805/codeyoung-trial-booking/commit/c13f37175738c0294960e3ddb96c427ba57c6b5c) also passed [GitHub Actions run 36247554371](https://github.com/ShreyasDamle2805/codeyoung-trial-booking/actions/runs/36247554371) on 26 September 2026. That clean Linux run performed `npm ci`, installed Chromium, checked formatting, and ran the complete lint/test/build/browser sequence. This is independently accessible evidence beyond the original local results.
+
 ## What these results do not establish
 
 - Remote CI results are available on the [GitHub Actions page](https://github.com/ShreyasDamle2805/codeyoung-trial-booking/actions). Check the result for the exact commit being submitted; the local results above are separate evidence.

@@ -1,6 +1,7 @@
 package-lock.json
 TRANSCRIPT.md
 docs/provided-context.txt
+docs/review-feedback.txt
 node_modules/
 frontend/dist/
 test-results/

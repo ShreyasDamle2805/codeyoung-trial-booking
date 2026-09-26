@@ -5,84 +5,93 @@ if (!sources.length)
   throw new Error(
     "Usage: node tools/export-transcript.mjs session.jsonl [another-session.jsonl]",
   );
+
 const records = sources.flatMap((source) =>
   readFileSync(source, "utf8")
     .split("\n")
     .filter(Boolean)
     .map((line) => JSON.parse(line)),
 );
-const events = records
-  .filter((record) => record.type === "response_item")
+const messages = records
+  .filter(
+    (record) =>
+      record.type === "response_item" &&
+      record.payload?.type === "message" &&
+      ["user", "assistant"].includes(record.payload.role) &&
+      record.payload.channel !== "analysis",
+  )
   .sort((a, b) => (a.timestamp || "").localeCompare(b.timestamp || ""));
-const toolTypes = [
-  "function_call",
-  "function_call_output",
-  "custom_tool_call",
-  "custom_tool_call_output",
-];
-function textOnly(value) {
-  if (typeof value === "string") {
-    if (value.startsWith("data:image/") || value.startsWith("data:audio/"))
-      return "[binary media omitted]";
-    try {
-      return textOnly(JSON.parse(value));
-    } catch {
-      return value;
-    }
-  }
-  if (Array.isArray(value)) return value.map(textOnly);
-  if (value && typeof value === "object") {
-    if (
-      ["image", "image_url", "input_image", "audio", "input_audio"].includes(
-        value.type,
-      ) ||
-      value.image_url
-    )
-      return "[binary media omitted]";
-    return Object.fromEntries(
-      Object.entries(value).map(([key, entry]) => [key, textOnly(entry)]),
+
+function readableMessage(text) {
+  // These blocks are IDE-injected context, not the user's task or AI response.
+  text = text
+    .replace(/<recommended_plugins>[\s\S]*?<\/recommended_plugins>/g, "")
+    .replace(/<environment_context>[\s\S]*?<\/environment_context>/g, "")
+    .replace(
+      /# AGENTS\.md instructions\s*<INSTRUCTIONS>[\s\S]*?<\/INSTRUCTIONS>/g,
+      "",
     );
-  }
-  return value;
-}
-let output = `# AI interaction transcript\n\nExported ${new Date().toISOString()}. This is a snapshot of the available sessions, not a reconstruction. User and assistant messages and textual tool interactions are included; internal reasoning, system/developer instructions, and binary images/audio are excluded. Refresh after the final AI response and include any other sessions separately.\n\n`;
-let messages = 0,
-  tools = 0;
-const seen = new Set();
-for (const record of events) {
-  const event = record.payload;
-  if (event.id && seen.has(event.id)) continue;
-  if (event.id) seen.add(event.id);
+
+  // Keep the exact request following the IDE's file/tab/attachment preamble.
   if (
-    event.type === "message" &&
-    ["user", "assistant"].includes(event.role) &&
-    event.channel !== "analysis"
+    /^\s*# (?:Context from my IDE setup|Files pasted by the user):/.test(text)
   ) {
-    const text = event.content.map((part) => part.text || "").join("\n");
-    if (!text) continue;
-    output += `## ${event.role === "user" ? "User" : "Assistant"}${event.channel === "commentary" ? " — progress update" : ""}\n\n${text}\n\n---\n\n`;
-    messages++;
-  } else if (toolTypes.includes(event.type)) {
-    const content = textOnly(
-      event.arguments ?? event.input ?? event.output ?? "",
-    );
-    const text =
-      typeof content === "string" ? content : JSON.stringify(content, null, 2);
-    const fence = "`".repeat(
-      Math.max(
-        3,
-        ...[...text.matchAll(/`+/g)].map((match) => match[0].length + 1),
-      ),
-    );
-    output += `<details>\n<summary>Tool ${event.name || "result"} (${event.call_id || tools + 1})</summary>\n\n${fence}text\n${text}\n${fence}\n\n</details>\n\n`;
-    tools++;
+    const marker = /^## My request:\s*\n/m.exec(text);
+    if (marker) text = text.slice(marker.index + marker[0].length);
   }
+
+  // Render the actual clarification answer, not the UI's opaque identifiers.
+  const reply =
+    /<send_user_message_question_reply>\s*([\s\S]*?)\s*<\/send_user_message_question_reply>/.exec(
+      text,
+    );
+  if (reply) {
+    const answers = JSON.parse(reply[1]);
+    text = answers
+      .map(({ question, answer }) => `Reply to: ${question}\n\n${answer}`)
+      .join("\n\n");
+  }
+
+  // Retain useful source links without exposing the workstation's drive or username.
+  return text
+    .replace(/[A-Z]:[\\/]codeyoung-trial-booking[\\/]/gi, "")
+    .replace(
+      /[A-Z]:[\\/]Users[\\/][^\\/\r\n]+[\\/]\.codex[\\/]attachments[\\/][^\\/\r\n]+[\\/][^\r\n]+/gi,
+      "[local attachment; supplied text is included below]",
+    )
+    .trim();
 }
-if (existsSync("docs/provided-context.txt"))
-  output +=
-    "## Earlier context supplied by the user (verbatim attachment)\n\n" +
-    readFileSync("docs/provided-context.txt", "utf8");
-writeFileSync("TRANSCRIPT.md", output);
+
+let output = `# AI interaction transcript\n\nExported ${new Date().toISOString()}.\n\n## Export policy\n\nThis is a chronological record of the available **user prompts and user-facing assistant responses**, including progress updates and clarification answers. The dialogue is not summarized or rewritten.\n\nFor readability, the export omits tool execution records, IDE-injected plugin/environment/file-tab metadata, internal reasoning, system/developer instructions, and binary media. Workspace file links are made relative and local attachment paths are omitted. These presentation changes do not change the implementation requests or answers. Generated source code and tests are available in the repository. Original execution records remain in the local session files; they are not part of this public transcript.\n\nThe earlier conversation and review attachment supplied by the user are preserved below as source material, with their original wording. Their claims are not independently endorsed by the exporter. This is a snapshot through export time: refresh after further AI work, and supply any additional session files when exporting.\n\n## Implementation conversation\n\n`;
+const seen = new Set();
+let count = 0;
+for (const { payload, timestamp } of messages) {
+  if (payload.id && seen.has(payload.id)) continue;
+  if (payload.id) seen.add(payload.id);
+  const text = readableMessage(
+    payload.content.map((part) => part.text || "").join("\n"),
+  );
+  if (!text) continue;
+  count++;
+  const role = payload.role === "user" ? "User" : "Assistant";
+  const detail = payload.channel === "commentary" ? " — progress update" : "";
+  output += `### ${count}. ${role}${detail}\n\n${timestamp ? `*${timestamp}*\n\n` : ""}${text}\n\n---\n\n`;
+}
+
+for (const [path, title] of [
+  [
+    "docs/provided-context.txt",
+    "Earlier assignment context and conversation supplied by the user",
+  ],
+  [
+    "docs/review-feedback.txt",
+    "Claude review supplied by the user after publication",
+  ],
+]) {
+  if (!existsSync(path)) continue;
+  output += `## ${title}\n\n<details>\n<summary>Expand the full original supplied text</summary>\n\n${readFileSync(path, "utf8")}\n\n</details>\n\n`;
+}
+writeFileSync("TRANSCRIPT.md", output.trimEnd() + "\n");
 console.log(
-  `Exported ${messages} messages and ${tools} textual tool interactions to TRANSCRIPT.md`,
+  `Exported ${count} user/assistant messages without tool or IDE metadata.`,
 );

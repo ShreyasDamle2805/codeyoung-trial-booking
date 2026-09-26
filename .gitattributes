@@ -3,3 +3,4 @@
 # Preserve supplied transcript text rather than rewriting its original spacing.
 TRANSCRIPT.md -whitespace
 docs/provided-context.txt -whitespace
+docs/review-feedback.txt -whitespace
