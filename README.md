@@ -151,6 +151,8 @@ Use an actual slot returned by the API within the current booking window. Errors
 
 On Windows, browser checks use installed Microsoft Edge. On CI, they use Playwright Chromium. To use another installed browser locally, set `PLAYWRIGHT_CHANNEL`; see [Playwright browser setup](https://playwright.dev/docs/browsers).
 
+Browser tests need Chromium installed once first: `npx playwright install --with-deps chromium` (this is what the CI workflow does automatically; a local machine needs to run it manually the first time).
+
 ```sh
 npm run format:check
 npm run check
